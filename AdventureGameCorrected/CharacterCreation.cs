@@ -23,6 +23,10 @@ namespace AdventureGameCorrected
         public CharacterCreation()
         {
             InitializeComponent();
+            lblBrawn.Text = "";
+            lblBrains.Text = "";
+            lblMagic.Text = "";
+            lblCharm.Text = "";
         }
 
         private void btnRandom_Click(object sender, EventArgs e)
@@ -72,9 +76,92 @@ namespace AdventureGameCorrected
             }
             else
             {
+                brawn = Convert.ToInt32(cbBrawn.Text);
+                cbBrains.Items.Remove(cbBrawn.Text);
+                cbMagic.Items.Remove(cbBrawn.Text);
+                cbCharm.Items.Remove(cbBrawn.Text);
 
+                lblBrawn.Text = cbBrawn.Text;
+                cbBrawn.Items.Clear();
+                cbBrawn.Items.Add("<Reset>");
+                cbBrawn.Text = lblBrawn.Text;
             }
           
+        }
+
+        private void cbBrains_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (cbBrains.Text == "<Reset>")
+            {
+
+            }
+            else
+            {
+                brains = Convert.ToInt32(cbBrains.Text);
+                cbBrawn.Items.Remove(cbBrains.Text);
+                cbMagic.Items.Remove(cbBrains.Text);
+                cbCharm.Items.Remove(cbBrains.Text);
+
+                lblBrains.Text = cbBrains.Text;
+                cbBrains.Items.Clear();
+                cbBrains.Items.Add("<Reset>");
+                cbBrains.Text = lblBrains.Text;
+            }
+        }
+
+        private void cbMagic_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (cbMagic.Text == "<Reset>")
+            {
+
+            }
+            else
+            {
+                magic = Convert.ToInt32(cbMagic.Text);
+                cbBrawn.Items.Remove(cbMagic.Text);
+                cbBrains.Items.Remove(cbMagic.Text);
+                cbCharm.Items.Remove(cbMagic.Text);
+
+                lblMagic.Text = cbMagic.Text;
+                cbMagic.Items.Clear();
+                cbMagic.Items.Add("<Reset>");
+                cbMagic.Text = lblMagic.Text;
+            }
+        }
+
+        private void cbCharm_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (cbCharm.Text == "<Reset>")
+            {
+
+            }
+            else
+            {
+                magic = Convert.ToInt32(cbCharm.Text);
+                lblCharm.Text = cbCharm.Text;
+                cbBrawn.Items.Remove(cbCharm.Text);
+                cbBrains.Items.Remove(cbCharm.Text);
+                cbMagic.Items.Remove(cbCharm.Text);
+
+                cbCharm.Items.Clear();
+                cbCharm.Items.Add("<Reset>");
+                cbCharm.Text = lblCharm.Text;
+            }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            if(brawn != 0 && brains != 0 && magic != 0 && charm != 0 && name != "" && cbPictures.Text != "")
+            {
+
+            }
+            else
+            {
+                string message = "Please complete Character Creation before beginning your adventure.";
+                MessageBox.Show(message);
+
+        
+            }
         }
     }
 }

@@ -139,6 +139,7 @@
             this.cbCharm.Size = new System.Drawing.Size(121, 34);
             this.cbCharm.TabIndex = 3;
             this.cbCharm.Text = "Charm";
+            this.cbCharm.SelectedIndexChanged += new System.EventHandler(this.cbCharm_SelectedIndexChanged);
             // 
             // cbMagic
             // 
@@ -154,6 +155,7 @@
             this.cbMagic.Size = new System.Drawing.Size(121, 34);
             this.cbMagic.TabIndex = 2;
             this.cbMagic.Text = "Magic";
+            this.cbMagic.SelectedIndexChanged += new System.EventHandler(this.cbMagic_SelectedIndexChanged);
             // 
             // cbBrains
             // 
@@ -169,6 +171,7 @@
             this.cbBrains.Size = new System.Drawing.Size(121, 34);
             this.cbBrains.TabIndex = 1;
             this.cbBrains.Text = "Brains";
+            this.cbBrains.SelectedIndexChanged += new System.EventHandler(this.cbBrains_SelectedIndexChanged);
             // 
             // cbBrawn
             // 
@@ -304,6 +307,7 @@
             this.button1.TabIndex = 3;
             this.button1.Text = "Begin\r\nAdventure";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // cbPictures
             // 
