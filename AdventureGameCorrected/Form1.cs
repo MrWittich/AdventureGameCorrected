@@ -36,11 +36,11 @@ namespace AdventureGameCorrected
             
         }
 
-      
-
-        private void Form1_MouseHover(object sender, EventArgs e)
+        private void lblStart_Click(object sender, EventArgs e)
         {
-
+            CharacterCreation n = new CharacterCreation();
+            n.Show();
+            this.Hide();
         }
     }
 }

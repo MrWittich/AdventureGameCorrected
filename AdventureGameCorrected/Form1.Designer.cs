@@ -54,7 +54,7 @@
             this.label1.ForeColor = System.Drawing.SystemColors.Control;
             this.label1.Location = new System.Drawing.Point(301, 194);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(203, 35);
+            this.label1.Size = new System.Drawing.Size(215, 36);
             this.label1.TabIndex = 1;
             this.label1.Text = "Chris Wittich";
             // 
@@ -70,6 +70,7 @@
             this.lblStart.TabIndex = 2;
             this.lblStart.Text = "Start";
             this.lblStart.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblStart.Click += new System.EventHandler(this.lblStart_Click);
             this.lblStart.MouseLeave += new System.EventHandler(this.lblStart_MouseLeave);
             this.lblStart.MouseHover += new System.EventHandler(this.lblStart_MouseHover);
             // 
@@ -85,7 +86,6 @@
             this.Name = "Form1";
             this.Text = "Title";
             this.Load += new System.EventHandler(this.Form1_Load);
-            this.MouseHover += new System.EventHandler(this.Form1_MouseHover);
             this.ResumeLayout(false);
             this.PerformLayout();
 
