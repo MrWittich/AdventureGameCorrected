@@ -18,7 +18,8 @@ namespace AdventureGameCorrected
         int charm;
         int energy;
         string name;
-        string picture;
+
+        Character n;
         
         public CharacterCreation()
         {
@@ -27,6 +28,7 @@ namespace AdventureGameCorrected
             lblBrains.Text = "";
             lblMagic.Text = "";
             lblCharm.Text = "";
+            n = new Character();
         }
 
         private void btnRandom_Click(object sender, EventArgs e)
@@ -72,7 +74,10 @@ namespace AdventureGameCorrected
         {
             if(cbBrawn.Text == "<Reset>")
             {
-
+                brawn = 0;
+                lblBrawn.Text = "";
+                Reset();
+                cbBrawn.Text = "Brawn";
             }
             else
             {
@@ -93,7 +98,10 @@ namespace AdventureGameCorrected
         {
             if (cbBrains.Text == "<Reset>")
             {
-
+                brains = 0;
+                lblBrains.Text = "";
+                Reset();
+                cbBrains.Text = "Brains";
             }
             else
             {
@@ -113,7 +121,10 @@ namespace AdventureGameCorrected
         {
             if (cbMagic.Text == "<Reset>")
             {
-
+                magic = 0;
+                lblMagic.Text = "";
+                Reset();
+                cbMagic.Text = "Magic";
             }
             else
             {
@@ -133,11 +144,14 @@ namespace AdventureGameCorrected
         {
             if (cbCharm.Text == "<Reset>")
             {
-
+                charm = 0;
+                lblCharm.Text = "";
+                Reset();
+                cbCharm.Text = "Charm";
             }
             else
             {
-                magic = Convert.ToInt32(cbCharm.Text);
+                charm = Convert.ToInt32(cbCharm.Text);
                 lblCharm.Text = cbCharm.Text;
                 cbBrawn.Items.Remove(cbCharm.Text);
                 cbBrains.Items.Remove(cbCharm.Text);
@@ -153,7 +167,17 @@ namespace AdventureGameCorrected
         {
             if(brawn != 0 && brains != 0 && magic != 0 && charm != 0 && name != "" && cbPictures.Text != "")
             {
+                n.brawn = brawn;
+                n.brains = brains;
+                n.magic = magic;
+                n.charm = charm;
+                n.energy = 10;
+                n.name = txtName.Text;
+                n.picture = pbCharacterImage.Image;
 
+                Enterance go = new Enterance(n);
+                go.Show();
+                this.Hide();
             }
             else
             {
@@ -162,6 +186,70 @@ namespace AdventureGameCorrected
 
         
             }
+        }
+
+        private void Reset()
+        {
+            string fill;
+
+            cbBrawn.Items.Clear();
+            cbBrains.Items.Clear();
+            cbMagic.Items.Clear();
+            cbCharm.Items.Clear();
+
+            if(brawn == 0)
+            {
+                for(int i = 1; i < 5; i++)
+                {
+                    if(brains != i && magic != i && charm != i)
+                    {
+                        fill = "";
+                        fill = fill + i;
+                        cbBrawn.Items.Add(fill);
+                    }
+                }
+            }
+            if (brains == 0)
+            {
+                for (int i = 1; i < 5; i++)
+                {
+                    if (brawn != i && magic != i && charm != i)
+                    {
+                        fill = "";
+                        fill = fill + i;
+                        cbBrains.Items.Add(fill);
+                    }
+                }
+            }
+            if (magic == 0)
+            {
+                for (int i = 1; i < 5; i++)
+                {
+                    if (brawn != i && brains != i && charm != i)
+                    {
+                        fill = "";
+                        fill = fill + i;
+                        cbMagic.Items.Add(fill);
+                    }
+                }
+            }
+            if (charm == 0)
+            {
+                for (int i = 1; i < 5; i++)
+                {
+                    if (brawn != i && magic != i && brains != i)
+                    {
+                        fill = "";
+                        fill = fill + i;
+                        cbCharm.Items.Add(fill);
+                    }
+                }
+            }
+
+            cbBrawn.Items.Add("<Reset>");
+            cbBrains.Items.Add("<Reset>");
+            cbMagic.Items.Add("<Reset>");
+            cbCharm.Items.Add("<Reset>");
         }
     }
 }
