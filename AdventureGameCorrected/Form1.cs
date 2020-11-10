@@ -33,7 +33,7 @@ namespace AdventureGameCorrected
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            
+            //this.BackgroundImage = Properties.Resources.Archer;
         }
 
         private void lblStart_Click(object sender, EventArgs e)

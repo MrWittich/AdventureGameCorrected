@@ -22,7 +22,22 @@ namespace AdventureGameCorrected
 
         private void Enterance_Load(object sender, EventArgs e)
         {
+            ProgEnergy.Value = info.energy * 10;
+            lblEnergy.BackColor = System.Drawing.Color.Transparent;
+            lblBrawn.Text = "" + info.brawn;
+            lblBrains.Text = "" + info.brains;
+            lblMagic.Text = "" + info.magic;
+            lblCharm.Text = "" + info.charm;
+            pbCharacter.Image = info.picture;
+            pbCharacter.SizeMode = PictureBoxSizeMode.StretchImage;
+
 
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+
+        }
+
     }
 }
