@@ -15,9 +15,7 @@ namespace AdventureGameCorrected
         int brawn;
         int brains;
         int magic;
-        int charm;
-        int energy;
-        string name;
+        int charm;       
 
         Character n;
         
@@ -33,6 +31,50 @@ namespace AdventureGameCorrected
 
         private void btnRandom_Click(object sender, EventArgs e)
         {
+            int[] stats = new int[4];
+            int temp;
+            Random r = new Random();
+            brawn = r.Next(1, 4);
+            stats[0] = brawn;
+            cbBrawn.Items.Clear();
+            cbBrawn.Items.Add("<Reset>");
+            lblBrawn.Text = "" + brawn;
+
+            temp = r.Next(1, 4);
+            while(temp == stats[0] || temp == stats[1] || temp == stats[2] || temp == stats[3] )
+            {
+                temp = r.Next(1, 4);
+            }
+
+            brains = temp;
+            stats[1] = brains;
+            cbBrains.Items.Clear();
+            cbBrains.Items.Add("<Reset>");
+            lblBrains.Text = "" + brains;
+
+            while (temp == stats[0] || temp == stats[1] || temp == stats[2] || temp == stats[3])
+            {
+                temp = r.Next(1, 4);
+            }
+
+            magic = temp;
+            stats[2] = magic;
+            cbMagic.Items.Clear();
+            cbMagic.Items.Add("<Reset>");
+            lblMagic.Text = "" + magic;
+
+            while (temp == stats[0] || temp == stats[1] || temp == stats[2] || temp == stats[3])
+            {
+                temp = r.Next(1, 4);
+            }
+
+            charm = temp;
+            stats[3] = charm;
+            cbCharm.Items.Clear();
+            cbCharm.Items.Add("<Reset>");
+            lblCharm.Text = "" + charm;
+
+
 
         }
 
@@ -165,7 +207,7 @@ namespace AdventureGameCorrected
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if(brawn != 0 && brains != 0 && magic != 0 && charm != 0 && name != "" && cbPictures.Text != "")
+            if(brawn != 0 && brains != 0 && magic != 0 && charm != 0 && txtName.Text != "" && cbPictures.Text != "")
             {
                 n.brawn = brawn;
                 n.brains = brains;

@@ -39,6 +39,8 @@
             this.cbBrains = new System.Windows.Forms.ComboBox();
             this.cbBrawn = new System.Windows.Forms.ComboBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
             this.lblCharm = new System.Windows.Forms.Label();
             this.lblMagic = new System.Windows.Forms.Label();
             this.lblBrains = new System.Windows.Forms.Label();
@@ -52,8 +54,6 @@
             this.cbPictures = new System.Windows.Forms.ComboBox();
             this.label5 = new System.Windows.Forms.Label();
             this.txtName = new System.Windows.Forms.TextBox();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbCharacterImage)).BeginInit();
@@ -117,9 +117,9 @@
             // btnRandom
             // 
             this.btnRandom.Font = new System.Drawing.Font("SWGothe", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRandom.Location = new System.Drawing.Point(195, 102);
+            this.btnRandom.Location = new System.Drawing.Point(170, 102);
             this.btnRandom.Name = "btnRandom";
-            this.btnRandom.Size = new System.Drawing.Size(147, 38);
+            this.btnRandom.Size = new System.Drawing.Size(186, 38);
             this.btnRandom.TabIndex = 8;
             this.btnRandom.Text = "Randomize";
             this.btnRandom.UseVisualStyleBackColor = true;
@@ -208,6 +208,26 @@
             this.groupBox2.TabIndex = 1;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Stats";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("SWGothe", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(198, 182);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(61, 38);
+            this.label7.TabIndex = 9;
+            this.label7.Text = "10";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("SWGothe", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(14, 185);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(124, 36);
+            this.label6.TabIndex = 8;
+            this.label6.Text = "Energy";
             // 
             // lblCharm
             // 
@@ -301,9 +321,9 @@
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("SWGothe", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(58, 309);
+            this.button1.Location = new System.Drawing.Point(51, 311);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(114, 54);
+            this.button1.Size = new System.Drawing.Size(130, 54);
             this.button1.TabIndex = 3;
             this.button1.Text = "Begin\r\nAdventure";
             this.button1.UseVisualStyleBackColor = true;
@@ -342,26 +362,6 @@
             this.txtName.Name = "txtName";
             this.txtName.Size = new System.Drawing.Size(299, 22);
             this.txtName.TabIndex = 6;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("SWGothe", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(14, 185);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(119, 35);
-            this.label6.TabIndex = 8;
-            this.label6.Text = "Energy";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("SWGothe", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(198, 182);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(61, 38);
-            this.label7.TabIndex = 9;
-            this.label7.Text = "10";
             // 
             // CharacterCreation
             // 

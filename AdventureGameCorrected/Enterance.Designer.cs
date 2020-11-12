@@ -30,6 +30,13 @@
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.lblEnergy = new System.Windows.Forms.Label();
+            this.ProgEnergy = new System.Windows.Forms.ProgressBar();
+            this.lblCharm = new System.Windows.Forms.Label();
+            this.lblMagic = new System.Windows.Forms.Label();
+            this.lblBrains = new System.Windows.Forms.Label();
+            this.lblBrawn = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -44,13 +51,6 @@
             this.btnThree = new System.Windows.Forms.Button();
             this.btnTwo = new System.Windows.Forms.Button();
             this.btnOne = new System.Windows.Forms.Button();
-            this.label5 = new System.Windows.Forms.Label();
-            this.lblBrawn = new System.Windows.Forms.Label();
-            this.lblBrains = new System.Windows.Forms.Label();
-            this.lblMagic = new System.Windows.Forms.Label();
-            this.lblCharm = new System.Windows.Forms.Label();
-            this.ProgEnergy = new System.Windows.Forms.ProgressBar();
-            this.lblEnergy = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbCharacter)).BeginInit();
@@ -91,6 +91,75 @@
             this.groupBox2.TabIndex = 1;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Stats";
+            // 
+            // lblEnergy
+            // 
+            this.lblEnergy.AutoSize = true;
+            this.lblEnergy.BackColor = System.Drawing.Color.Transparent;
+            this.lblEnergy.Font = new System.Drawing.Font("SWGothe", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblEnergy.Location = new System.Drawing.Point(124, 159);
+            this.lblEnergy.Name = "lblEnergy";
+            this.lblEnergy.Size = new System.Drawing.Size(34, 22);
+            this.lblEnergy.TabIndex = 9;
+            this.lblEnergy.Text = "10";
+            // 
+            // ProgEnergy
+            // 
+            this.ProgEnergy.Location = new System.Drawing.Point(92, 158);
+            this.ProgEnergy.Name = "ProgEnergy";
+            this.ProgEnergy.Size = new System.Drawing.Size(100, 23);
+            this.ProgEnergy.TabIndex = 6;
+            // 
+            // lblCharm
+            // 
+            this.lblCharm.AutoSize = true;
+            this.lblCharm.Font = new System.Drawing.Font("SWGothe", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCharm.Location = new System.Drawing.Point(166, 108);
+            this.lblCharm.Name = "lblCharm";
+            this.lblCharm.Size = new System.Drawing.Size(26, 26);
+            this.lblCharm.TabIndex = 8;
+            this.lblCharm.Text = "1";
+            // 
+            // lblMagic
+            // 
+            this.lblMagic.AutoSize = true;
+            this.lblMagic.Font = new System.Drawing.Font("SWGothe", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMagic.Location = new System.Drawing.Point(166, 80);
+            this.lblMagic.Name = "lblMagic";
+            this.lblMagic.Size = new System.Drawing.Size(26, 26);
+            this.lblMagic.TabIndex = 7;
+            this.lblMagic.Text = "1";
+            // 
+            // lblBrains
+            // 
+            this.lblBrains.AutoSize = true;
+            this.lblBrains.Font = new System.Drawing.Font("SWGothe", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblBrains.Location = new System.Drawing.Point(166, 54);
+            this.lblBrains.Name = "lblBrains";
+            this.lblBrains.Size = new System.Drawing.Size(26, 26);
+            this.lblBrains.TabIndex = 6;
+            this.lblBrains.Text = "1";
+            // 
+            // lblBrawn
+            // 
+            this.lblBrawn.AutoSize = true;
+            this.lblBrawn.BackColor = System.Drawing.Color.Transparent;
+            this.lblBrawn.Font = new System.Drawing.Font("SWGothe", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblBrawn.Location = new System.Drawing.Point(166, 28);
+            this.lblBrawn.Name = "lblBrawn";
+            this.lblBrawn.Size = new System.Drawing.Size(26, 26);
+            this.lblBrawn.TabIndex = 5;
+            this.lblBrawn.Text = "1";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("SWGothe", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(6, 155);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(86, 26);
+            this.label5.TabIndex = 4;
+            this.label5.Text = "Energy";
             // 
             // label4
             // 
@@ -134,12 +203,11 @@
             // 
             // pbCharacter
             // 
-            this.pbCharacter.Location = new System.Drawing.Point(0, 21);
+            this.pbCharacter.Location = new System.Drawing.Point(0, 25);
             this.pbCharacter.Name = "pbCharacter";
             this.pbCharacter.Size = new System.Drawing.Size(198, 176);
             this.pbCharacter.TabIndex = 0;
             this.pbCharacter.TabStop = false;
-            this.pbCharacter.Click += new System.EventHandler(this.pbCharacter_Click);
             // 
             // pbRoom
             // 
@@ -230,75 +298,6 @@
             this.btnOne.TabIndex = 0;
             this.btnOne.Text = "button1";
             this.btnOne.UseVisualStyleBackColor = true;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("SWGothe", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(6, 155);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(86, 26);
-            this.label5.TabIndex = 4;
-            this.label5.Text = "Energy";
-            // 
-            // lblBrawn
-            // 
-            this.lblBrawn.AutoSize = true;
-            this.lblBrawn.BackColor = System.Drawing.Color.Transparent;
-            this.lblBrawn.Font = new System.Drawing.Font("SWGothe", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblBrawn.Location = new System.Drawing.Point(166, 28);
-            this.lblBrawn.Name = "lblBrawn";
-            this.lblBrawn.Size = new System.Drawing.Size(26, 26);
-            this.lblBrawn.TabIndex = 5;
-            this.lblBrawn.Text = "1";
-            // 
-            // lblBrains
-            // 
-            this.lblBrains.AutoSize = true;
-            this.lblBrains.Font = new System.Drawing.Font("SWGothe", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblBrains.Location = new System.Drawing.Point(166, 54);
-            this.lblBrains.Name = "lblBrains";
-            this.lblBrains.Size = new System.Drawing.Size(26, 26);
-            this.lblBrains.TabIndex = 6;
-            this.lblBrains.Text = "1";
-            // 
-            // lblMagic
-            // 
-            this.lblMagic.AutoSize = true;
-            this.lblMagic.Font = new System.Drawing.Font("SWGothe", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMagic.Location = new System.Drawing.Point(166, 80);
-            this.lblMagic.Name = "lblMagic";
-            this.lblMagic.Size = new System.Drawing.Size(26, 26);
-            this.lblMagic.TabIndex = 7;
-            this.lblMagic.Text = "1";
-            // 
-            // lblCharm
-            // 
-            this.lblCharm.AutoSize = true;
-            this.lblCharm.Font = new System.Drawing.Font("SWGothe", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCharm.Location = new System.Drawing.Point(166, 108);
-            this.lblCharm.Name = "lblCharm";
-            this.lblCharm.Size = new System.Drawing.Size(26, 26);
-            this.lblCharm.TabIndex = 8;
-            this.lblCharm.Text = "1";
-            // 
-            // ProgEnergy
-            // 
-            this.ProgEnergy.Location = new System.Drawing.Point(92, 158);
-            this.ProgEnergy.Name = "ProgEnergy";
-            this.ProgEnergy.Size = new System.Drawing.Size(100, 23);
-            this.ProgEnergy.TabIndex = 6;
-            // 
-            // lblEnergy
-            // 
-            this.lblEnergy.AutoSize = true;
-            this.lblEnergy.BackColor = System.Drawing.Color.Transparent;
-            this.lblEnergy.Font = new System.Drawing.Font("SWGothe", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblEnergy.Location = new System.Drawing.Point(124, 159);
-            this.lblEnergy.Name = "lblEnergy";
-            this.lblEnergy.Size = new System.Drawing.Size(34, 22);
-            this.lblEnergy.TabIndex = 9;
-            this.lblEnergy.Text = "10";
             // 
             // Enterance
             // 

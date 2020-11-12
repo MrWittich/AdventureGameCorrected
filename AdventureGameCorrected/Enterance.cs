@@ -30,7 +30,14 @@ namespace AdventureGameCorrected
             lblCharm.Text = "" + info.charm;
             pbCharacter.Image = info.picture;
             pbCharacter.SizeMode = PictureBoxSizeMode.StretchImage;
-
+            pbRoom.Image = Properties.Resources.Enterance;
+            pbRoom.SizeMode = PictureBoxSizeMode.StretchImage;
+            btnThree.Hide();
+            lblChoice3.Hide();
+            btnTwo.Text = "Leave!";
+            lblChoice2.Text = "Flee the Dangerous Dungeon, like a coward.";
+            btnOne.Text = "Enter";
+            lblChoice1.Text = "Enter the Dangerous Dungeon, like a true Adventurer!";
 
         }
 
