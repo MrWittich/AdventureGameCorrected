@@ -96,10 +96,10 @@
             // 
             this.lblEnergy.AutoSize = true;
             this.lblEnergy.BackColor = System.Drawing.Color.Transparent;
-            this.lblEnergy.Font = new System.Drawing.Font("SWGothe", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblEnergy.Location = new System.Drawing.Point(124, 159);
+            this.lblEnergy.Font = new System.Drawing.Font("SWGothe", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblEnergy.Location = new System.Drawing.Point(126, 160);
             this.lblEnergy.Name = "lblEnergy";
-            this.lblEnergy.Size = new System.Drawing.Size(34, 22);
+            this.lblEnergy.Size = new System.Drawing.Size(29, 19);
             this.lblEnergy.TabIndex = 9;
             this.lblEnergy.Text = "10";
             // 
@@ -246,34 +246,31 @@
             // 
             // lblChoice3
             // 
-            this.lblChoice3.AutoSize = true;
-            this.lblChoice3.Location = new System.Drawing.Point(140, 164);
+            this.lblChoice3.Location = new System.Drawing.Point(102, 134);
             this.lblChoice3.Name = "lblChoice3";
-            this.lblChoice3.Size = new System.Drawing.Size(46, 17);
+            this.lblChoice3.Size = new System.Drawing.Size(440, 56);
             this.lblChoice3.TabIndex = 5;
             this.lblChoice3.Text = "label2";
             // 
             // lblChoice2
             // 
-            this.lblChoice2.AutoSize = true;
-            this.lblChoice2.Location = new System.Drawing.Point(140, 108);
+            this.lblChoice2.Location = new System.Drawing.Point(102, 83);
             this.lblChoice2.Name = "lblChoice2";
-            this.lblChoice2.Size = new System.Drawing.Size(46, 17);
+            this.lblChoice2.Size = new System.Drawing.Size(440, 47);
             this.lblChoice2.TabIndex = 4;
             this.lblChoice2.Text = "label2";
             // 
             // lblChoice1
             // 
-            this.lblChoice1.AutoSize = true;
-            this.lblChoice1.Location = new System.Drawing.Point(140, 40);
+            this.lblChoice1.Location = new System.Drawing.Point(102, 31);
             this.lblChoice1.Name = "lblChoice1";
-            this.lblChoice1.Size = new System.Drawing.Size(46, 17);
+            this.lblChoice1.Size = new System.Drawing.Size(440, 36);
             this.lblChoice1.TabIndex = 3;
             this.lblChoice1.Text = "label2";
             // 
             // btnThree
             // 
-            this.btnThree.Location = new System.Drawing.Point(21, 161);
+            this.btnThree.Location = new System.Drawing.Point(21, 131);
             this.btnThree.Name = "btnThree";
             this.btnThree.Size = new System.Drawing.Size(75, 23);
             this.btnThree.TabIndex = 2;
@@ -283,7 +280,7 @@
             // 
             // btnTwo
             // 
-            this.btnTwo.Location = new System.Drawing.Point(21, 105);
+            this.btnTwo.Location = new System.Drawing.Point(21, 80);
             this.btnTwo.Name = "btnTwo";
             this.btnTwo.Size = new System.Drawing.Size(75, 23);
             this.btnTwo.TabIndex = 1;
@@ -292,7 +289,7 @@
             // 
             // btnOne
             // 
-            this.btnOne.Location = new System.Drawing.Point(21, 37);
+            this.btnOne.Location = new System.Drawing.Point(21, 28);
             this.btnOne.Name = "btnOne";
             this.btnOne.Size = new System.Drawing.Size(75, 23);
             this.btnOne.TabIndex = 0;
@@ -316,7 +313,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pbRoom)).EndInit();
             this.groupBox3.ResumeLayout(false);
             this.groupBox4.ResumeLayout(false);
-            this.groupBox4.PerformLayout();
             this.ResumeLayout(false);
 
         }

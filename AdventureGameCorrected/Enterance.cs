@@ -23,7 +23,6 @@ namespace AdventureGameCorrected
         private void Enterance_Load(object sender, EventArgs e)
         {
             ProgEnergy.Value = info.energy * 10;
-            lblEnergy.BackColor = System.Drawing.Color.Transparent;
             lblBrawn.Text = "" + info.brawn;
             lblBrains.Text = "" + info.brains;
             lblMagic.Text = "" + info.magic;
@@ -33,12 +32,13 @@ namespace AdventureGameCorrected
             pbRoom.Image = Properties.Resources.Enterance;
             pbRoom.SizeMode = PictureBoxSizeMode.StretchImage;
             btnThree.Hide();
-            lblChoice3.Hide();
+            lblChoice3.Text = ";aowuernv;oawurvn;oaienvc;oawu ef;qwoief jo;qwienv;oWINV;WIONVEPASINDV;PIANV;PINW;OINEV;PAIONVP;INSPINRV'PAIENR'BPVAINEV";
             btnTwo.Text = "Leave!";
             lblChoice2.Text = "Flee the Dangerous Dungeon, like a coward.";
             btnOne.Text = "Enter";
             lblChoice1.Text = "Enter the Dangerous Dungeon, like a true Adventurer!";
-
+            lblEnergy.BackColor = Color.Green;
+            ProgEnergy.ForeColor = Color.Green;
         }
 
         private void button3_Click(object sender, EventArgs e)

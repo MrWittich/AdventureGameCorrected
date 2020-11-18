@@ -34,16 +34,16 @@ namespace AdventureGameCorrected
             int[] stats = new int[4];
             int temp;
             Random r = new Random();
-            brawn = r.Next(1, 4);
+            brawn = r.Next(1, 5);
             stats[0] = brawn;
             cbBrawn.Items.Clear();
             cbBrawn.Items.Add("<Reset>");
             lblBrawn.Text = "" + brawn;
 
-            temp = r.Next(1, 4);
+            temp = r.Next(1, 5);
             while(temp == stats[0] || temp == stats[1] || temp == stats[2] || temp == stats[3] )
             {
-                temp = r.Next(1, 4);
+                temp = r.Next(1, 5);
             }
 
             brains = temp;
@@ -54,7 +54,7 @@ namespace AdventureGameCorrected
 
             while (temp == stats[0] || temp == stats[1] || temp == stats[2] || temp == stats[3])
             {
-                temp = r.Next(1, 4);
+                temp = r.Next(1, 5);
             }
 
             magic = temp;
@@ -65,7 +65,7 @@ namespace AdventureGameCorrected
 
             while (temp == stats[0] || temp == stats[1] || temp == stats[2] || temp == stats[3])
             {
-                temp = r.Next(1, 4);
+                temp = r.Next(1, 5);
             }
 
             charm = temp;
