@@ -32,7 +32,7 @@ namespace AdventureGameCorrected
             pbRoom.Image = Properties.Resources.Enterance;
             pbRoom.SizeMode = PictureBoxSizeMode.StretchImage;
             btnThree.Hide();
-            lblChoice3.Text = ";aowuernv;oawurvn;oaienvc;oawu ef;qwoief jo;qwienv;oWINV;WIONVEPASINDV;PIANV;PINW;OINEV;PAIONVP;INSPINRV'PAIENR'BPVAINEV";
+            lblChoice3.Hide();
             btnTwo.Text = "Leave!";
             lblChoice2.Text = "Flee the Dangerous Dungeon, like a coward.";
             btnOne.Text = "Enter";
@@ -46,5 +46,11 @@ namespace AdventureGameCorrected
 
         }
 
+        private void btnTwo_Click(object sender, EventArgs e)
+        {
+            Lose_Screen n = new Lose_Screen();
+            n.Show();
+            this.Hide();
+        }
     }
 }

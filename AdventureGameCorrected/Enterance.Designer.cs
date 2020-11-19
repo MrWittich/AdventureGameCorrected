@@ -286,6 +286,7 @@
             this.btnTwo.TabIndex = 1;
             this.btnTwo.Text = "button2";
             this.btnTwo.UseVisualStyleBackColor = true;
+            this.btnTwo.Click += new System.EventHandler(this.btnTwo_Click);
             // 
             // btnOne
             // 
