@@ -21,19 +21,25 @@ namespace AdventureGameCorrected
 
         private void Lose_Screen_Load(object sender, EventArgs e)
         {
+            //set background image
             pbBackground.Width = this.Width;
             pbBackground.Height = this.Height;
             pbBackground.Left = 0;
             pbBackground.Top = 0;
             pbBackground.Image = Properties.Resources.Skull;
             pbBackground.SizeMode = PictureBoxSizeMode.StretchImage;
+            //set top text
             lblLose.Parent = pbBackground;
             lblLose.BackColor = Color.Transparent;
             lblLose.ForeColor = Color.Red;
+            //set bottom text
+            lblLoseText.Width = this.Width;
+            lblLoseText.Height = this.Height - 204;
             lblLoseText.Text = message;
             lblLoseText.Parent = pbBackground;
             lblLoseText.BackColor = Color.Transparent;
-            lblLoseText.ForeColor = Color.White;
+            lblLoseText.ForeColor = Color.Red;
+            //set middle text
             lblAgain.Parent = pbBackground;
             lblAgain.BackColor = Color.Transparent;
             lblAgain.ForeColor = Color.Red;
@@ -47,6 +53,10 @@ namespace AdventureGameCorrected
             pbBackground.Top = 0;
             pbBackground.Image = Properties.Resources.Skull;
             pbBackground.SizeMode = PictureBoxSizeMode.StretchImage;
+            lblLoseText.Width = this.Width;
+            lblLoseText.Left = 0;
+            int fontSize = this.Width / 45;
+            lblLoseText.Font = new Font("SWGothe", fontSize, FontStyle.Bold);
         }
     }
 }

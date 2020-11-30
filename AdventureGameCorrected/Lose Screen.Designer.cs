@@ -58,14 +58,13 @@ namespace AdventureGameCorrected
             // lblLoseText
             // 
             this.lblLoseText.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.lblLoseText.AutoSize = true;
-            this.lblLoseText.Font = new System.Drawing.Font("SWGothe", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblLoseText.Location = new System.Drawing.Point(98, 339);
+            this.lblLoseText.Font = new System.Drawing.Font("SWGothe", 22.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblLoseText.Location = new System.Drawing.Point(12, 171);
             this.lblLoseText.Name = "lblLoseText";
-            this.lblLoseText.Size = new System.Drawing.Size(598, 102);
+            this.lblLoseText.Size = new System.Drawing.Size(759, 270);
             this.lblLoseText.TabIndex = 2;
             this.lblLoseText.Text = "Place Holder";
-            this.lblLoseText.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblLoseText.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             // 
             // lblAgain
             // 
