@@ -48,7 +48,7 @@ namespace AdventureGameCorrected
 
         private void btnTwo_Click(object sender, EventArgs e)
         {
-            Lose_Screen n = new Lose_Screen();
+            Lose_Screen n = new Lose_Screen("You have failed to enter the Dangerous Dungeon, and have been branded a coward for all time.");
             n.Show();
             this.Hide();
         }

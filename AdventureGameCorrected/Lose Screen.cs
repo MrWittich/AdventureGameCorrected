@@ -12,9 +12,11 @@ namespace AdventureGameCorrected
 {
     public partial class Lose_Screen : Form
     {
-        public Lose_Screen()
+        string message;
+        public Lose_Screen(string m)
         {
             InitializeComponent();
+            message = m;
         }
 
         private void Lose_Screen_Load(object sender, EventArgs e)
@@ -25,6 +27,16 @@ namespace AdventureGameCorrected
             pbBackground.Top = 0;
             pbBackground.Image = Properties.Resources.Skull;
             pbBackground.SizeMode = PictureBoxSizeMode.StretchImage;
+            lblLose.Parent = pbBackground;
+            lblLose.BackColor = Color.Transparent;
+            lblLose.ForeColor = Color.Red;
+            lblLoseText.Text = message;
+            lblLoseText.Parent = pbBackground;
+            lblLoseText.BackColor = Color.Transparent;
+            lblLoseText.ForeColor = Color.White;
+            lblAgain.Parent = pbBackground;
+            lblAgain.BackColor = Color.Transparent;
+            lblAgain.ForeColor = Color.Red;
         }
 
         private void Lose_Screen_SizeChanged(object sender, EventArgs e)
