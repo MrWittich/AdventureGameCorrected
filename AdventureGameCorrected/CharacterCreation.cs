@@ -293,5 +293,14 @@ namespace AdventureGameCorrected
             cbMagic.Items.Add("<Reset>");
             cbCharm.Items.Add("<Reset>");
         }
+
+        private void CharacterCreation_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == (char)Keys.Escape)
+            {
+                ExitForm ex = new ExitForm();
+                ex.Show();
+            }
+        }
     }
 }

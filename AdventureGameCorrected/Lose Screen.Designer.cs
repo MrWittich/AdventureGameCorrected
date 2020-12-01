@@ -33,6 +33,9 @@ namespace AdventureGameCorrected
             this.lblLose = new System.Windows.Forms.Label();
             this.lblLoseText = new System.Windows.Forms.Label();
             this.lblAgain = new System.Windows.Forms.Label();
+            this.lblPlayAgain = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.lblExit = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pbBackground)).BeginInit();
             this.SuspendLayout();
             // 
@@ -49,7 +52,7 @@ namespace AdventureGameCorrected
             this.lblLose.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.lblLose.AutoSize = true;
             this.lblLose.Font = new System.Drawing.Font("SWGothe", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblLose.Location = new System.Drawing.Point(12, 24);
+            this.lblLose.Location = new System.Drawing.Point(84, 24);
             this.lblLose.Name = "lblLose";
             this.lblLose.Size = new System.Drawing.Size(759, 102);
             this.lblLose.TabIndex = 1;
@@ -59,29 +62,71 @@ namespace AdventureGameCorrected
             // 
             this.lblLoseText.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.lblLoseText.Font = new System.Drawing.Font("SWGothe", 22.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblLoseText.Location = new System.Drawing.Point(12, 171);
+            this.lblLoseText.Location = new System.Drawing.Point(84, 327);
             this.lblLoseText.Name = "lblLoseText";
-            this.lblLoseText.Size = new System.Drawing.Size(759, 270);
+            this.lblLoseText.Size = new System.Drawing.Size(759, 157);
             this.lblLoseText.TabIndex = 2;
             this.lblLoseText.Text = "Place Holder";
-            this.lblLoseText.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.lblLoseText.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // lblAgain
             // 
             this.lblAgain.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.lblAgain.AutoSize = true;
             this.lblAgain.Font = new System.Drawing.Font("SWGothe", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAgain.Location = new System.Drawing.Point(111, 171);
+            this.lblAgain.Location = new System.Drawing.Point(84, 171);
             this.lblAgain.Name = "lblAgain";
             this.lblAgain.Size = new System.Drawing.Size(585, 102);
             this.lblAgain.TabIndex = 3;
             this.lblAgain.Text = "Play Again?";
             // 
+            // lblPlayAgain
+            // 
+            this.lblPlayAgain.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.lblPlayAgain.AutoSize = true;
+            this.lblPlayAgain.Font = new System.Drawing.Font("SWGothe", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPlayAgain.Location = new System.Drawing.Point(664, 171);
+            this.lblPlayAgain.Name = "lblPlayAgain";
+            this.lblPlayAgain.Size = new System.Drawing.Size(108, 102);
+            this.lblPlayAgain.TabIndex = 4;
+            this.lblPlayAgain.Text = "Y";
+            this.lblPlayAgain.Click += new System.EventHandler(this.lblPlayAgain_Click);
+            this.lblPlayAgain.MouseLeave += new System.EventHandler(this.lblPlayAgain_MouseLeave);
+            this.lblPlayAgain.MouseHover += new System.EventHandler(this.lblPlayAgain_MouseHover);
+            // 
+            // label2
+            // 
+            this.label2.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("SWGothe", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(745, 171);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(108, 102);
+            this.label2.TabIndex = 5;
+            this.label2.Text = "/";
+            // 
+            // lblExit
+            // 
+            this.lblExit.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.lblExit.AutoSize = true;
+            this.lblExit.Font = new System.Drawing.Font("SWGothe", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblExit.Location = new System.Drawing.Point(828, 171);
+            this.lblExit.Name = "lblExit";
+            this.lblExit.Size = new System.Drawing.Size(114, 102);
+            this.lblExit.TabIndex = 6;
+            this.lblExit.Text = "N";
+            this.lblExit.Click += new System.EventHandler(this.lblExit_Click);
+            this.lblExit.MouseLeave += new System.EventHandler(this.lblExit_MouseLeave);
+            this.lblExit.MouseHover += new System.EventHandler(this.lblExit_MouseHover);
+            // 
             // Lose_Screen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(945, 493);
+            this.Controls.Add(this.lblExit);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.lblPlayAgain);
             this.Controls.Add(this.lblAgain);
             this.Controls.Add(this.lblLoseText);
             this.Controls.Add(this.lblLose);
@@ -102,5 +147,8 @@ namespace AdventureGameCorrected
         private System.Windows.Forms.Label lblLose;
         private System.Windows.Forms.Label lblLoseText;
         private System.Windows.Forms.Label lblAgain;
+        private System.Windows.Forms.Label lblPlayAgain;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label lblExit;
     }
 }

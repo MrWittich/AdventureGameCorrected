@@ -32,8 +32,8 @@ namespace AdventureGameCorrected
         }
 
         private void Form1_Load(object sender, EventArgs e)
-        {
-            //this.BackgroundImage = Properties.Resources.Archer;
+        { 
+
         }
 
         private void lblStart_Click(object sender, EventArgs e)
@@ -41,6 +41,15 @@ namespace AdventureGameCorrected
             CharacterCreation n = new CharacterCreation();
             n.Show();
             this.Hide();
+        }
+
+        private void Form1_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if(e.KeyChar == (char)Keys.Escape)
+            {
+                ExitForm ex = new ExitForm();
+                ex.Show();
+            }
         }
     }
 }

@@ -377,6 +377,7 @@
             this.Controls.Add(this.groupBox1);
             this.Name = "CharacterCreation";
             this.Text = "CharacterCreation";
+            this.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.CharacterCreation_KeyPress);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);

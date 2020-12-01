@@ -52,5 +52,14 @@ namespace AdventureGameCorrected
             n.Show();
             this.Hide();
         }
+
+        private void Enterance_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == (char)Keys.Escape)
+            {
+                ExitForm ex = new ExitForm();
+                ex.Show();
+            }
+        }
     }
 }

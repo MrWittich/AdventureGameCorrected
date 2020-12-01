@@ -307,6 +307,7 @@
             this.Name = "Enterance";
             this.Text = "Enterance";
             this.Load += new System.EventHandler(this.Enterance_Load);
+            this.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Enterance_KeyPress);
             this.groupBox1.ResumeLayout(false);
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
